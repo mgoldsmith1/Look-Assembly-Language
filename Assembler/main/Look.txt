@@ -1,0 +1,16 @@
+;this is a test
+
+	    det    100 
+ hi     look    x    ;comment immediately after statement
+        pack    x
+ hey    acc     y    ; This is the another comment.
+        write   x
+        bp      hi
+        halt
+                     ;test
+ x      declare 5
+ y      declare 88
+ r      ds      444 
+ a      declare 200
+ 		end
+        
