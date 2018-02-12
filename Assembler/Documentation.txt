@@ -1,42 +1,35 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\margl1440\margr1440\vieww15400\viewh14640\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+This is roughly how this program should be interperated:
+________________________________________________________
 
-\f0\fs24 \cf0 This is roughly how this program should be interperated:\
-________________________________________________________\
-\
-Press Enter to continue...\
-\
-Translation of Program:\
-\
-Location    Contents    Original Statement\
-					      ;testing\
-0                                        det     100\
-100          070100     hi      look     x     ;comment immediately after statement\
-101          050100              pack     x\
-102          060101     hey   acc      y     ;this will accumulate the contents of y which is hey\
-103          080100              write    x\
-104          120100              bp       hi\
-105          130000              halt\
-				                 ; test\
-100          000005     x        declare  5\
-101                           y        declare  88\
-206          000555     b        declare  444\
-207          000100     a        declare  200\
-				 end\
-________________________________________________________\
-Press Enter to continue...\
-\
-Results from emulating program:\
-\
-? 10\
-10\
-? 144\
-144\
-?-7\
--7\
-\
-End of emulation\
-}
+Press Enter to continue...
+
+Translation of Program:
+
+Location    Contents    Original Statement
+					      ;testing
+0                               det     100
+100          070100     hi      look     x    ;comment immediately after statement
+101          050100             pack     x
+102          060101     hey     acc      y    ;this will accumulate the contents of y which is hey
+103          080100             write    x
+104          120100             bp       hi
+105          130000             halt
+				              ; test
+106          000005     x       declare  5
+107                     y       declare  88
+206          000555     b       declare  444
+207          000100     a       declare  200
+				end
+________________________________________________________
+Press Enter to continue...
+
+Results from emulating program:
+
+? 10
+10
+? 144
+144
+?-7
+-7
+
+End of emulation
