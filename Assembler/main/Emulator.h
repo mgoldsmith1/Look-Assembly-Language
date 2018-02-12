@@ -18,7 +18,7 @@ public:
 	    m_memory[a_location] = a_contents;	
 		return true;		  
 	}
-    // Runs the VC3600 program recorded in memory.
+        // Runs the Look program recorded in memory.
 	bool runProgram(int a_loc){
 		for (int i = a_loc; i < a_loc && a_loc < MEMSZ; ++i) { 
 			cout << m_memory[i] << endl;
