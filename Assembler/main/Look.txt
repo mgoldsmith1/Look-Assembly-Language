@@ -1,6 +1,6 @@
 ;this is a test
 
-	    det    100 
+	det    100 
  hi     look    x    ;comment immediately after statement
         pack    x
  hey    acc     y    ; This is the another comment.
