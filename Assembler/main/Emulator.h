@@ -7,14 +7,13 @@
 class emulator {
 
 public:
-	
-	const static int MEMSZ = 10000;	// The size of the memory of the Look assembler.
-    emulator() {
+       const static int MEMSZ = 10000;	// The size of the memory of the Look assembler.
+       emulator() {
 
 		memset( m_memory, 0, MEMSZ * sizeof(int) ); //***Initalized everything to 0. Part of old C style library
-    }
-    // Records instructions and data into Look memory.
-    bool insertMemory( int a_location, int a_contents ){ //***This is a bool to see if it was done sucessfully or not. 	
+       }
+       // Records instructions and data into Look memory.
+        bool insertMemory( int a_location, int a_contents ){ //***This is a bool to see if it was done sucessfully or not. 	
 	    m_memory[a_location] = a_contents;	
 		return true;		  
 	}
