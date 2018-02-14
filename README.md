@@ -6,10 +6,11 @@ The following is a sample program:
      
     ;this is a comment 
 
-          det      100   ; begins at memory address 100
-    hi    look     x     ; navigates to the contents of x from memory and observes the symbol 'hi' from the symbol table
-          pack     x     ; loads x into a temporary memory allocator
-    hey   acc      y     ; stores the location of 'hey' into the memory address of y and is loaded into an accumulator
+          det      100   ; The assembler begins reading instructions starting at memory address 100
+    hi    look     x     ; Locates the contents of x from memory containing the address of the symbol 'hi'. Returns the symbol location. 
+          pack     x     ; Loads the contents of x into a temporary memory allocator
+    hey   acc      y     ; Stores the location of 'hey' into the symbol table, during compilation the memory address of y is appended to 
+                         ; the location of hey on the symbol table and is loaded into the accumulator during run time.
           write    x
           bp       hi
     ^     ?        x     ; Prints the first value of x. Not yet implemented.  
@@ -17,7 +18,7 @@ The following is a sample program:
           ?        x     ; Prints the value of x
           halt
    
-    x     declare   5    ; declares the address space limit for x
+    x     declare   5    
     y     declare   88
     r     declare   444
     a     declare   200
