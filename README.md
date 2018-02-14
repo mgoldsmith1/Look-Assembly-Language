@@ -1,5 +1,5 @@
 # Look-Assembly
-This is a Regex-like assembly language that I wrote in C++. This project includes a compiler and an assembler. More documentation to be added.
+A Regex-like assembly language that I wrote in C++. This project includes a compiler and an assembler. More documentation to be added.
 
 _________________________________
 The following is a sample program:
