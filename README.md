@@ -10,7 +10,7 @@ The following is a sample program:
     hi    look     x     ; Locates the contents of x from memory containing the address of the symbol 'hi'. Returns the symbol location. 
           pack     x     ; Loads the contents of x into a temporary memory allocator
     hey   acc      y     ; Stores the location of 'hey' into the symbol table, during compilation the memory address of y is appended to 
-                         ; the location of hey on the symbol table and is loaded into the accumulator during run time.
+                         ; the location of 'hey' on the symbol table and is loaded into the accumulator during run time.
           write    x
           bp       hi
     ^     ?        x     ; Prints the first value of x. Not yet implemented.  
