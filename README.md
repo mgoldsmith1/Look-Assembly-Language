@@ -12,8 +12,9 @@ The following is a sample program:
                          
           pack     x     ; Loads the contents of x into a temporary memory allocator
           
-    hey   acc      y     ; Stores the location of 'hey' into the symbol table, during compilation the memory address of y is appended to 
-                         ; the location of 'hey' on the symbol table and is then loaded into an accumulator during run time.
+    hey   acc      y     ; Stores the location of 'hey' into the symbol table, during compilation the memory address
+                         ; of y is appended to the location of 'hey' on the symbol table and is then loaded into an
+                         ; accumulator during run time.
           write    x
           bp       hi
     ^     ?        x     ; Prints the first value of x. Not yet implemented.  
