@@ -26,6 +26,6 @@ int main( int argc, char *argv[] )
     // program will terminate at the point that it occurred.
     return 0;
 }
-// Assem.cpp : Defines the entry point for the console application.
+// Assemb.cpp : Defines the entry point for the console application.
 
 
