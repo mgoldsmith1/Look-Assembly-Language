@@ -5,6 +5,7 @@
 #include "Assembler.h"
 #include "Errors.h"
 #include <vector>
+
 // Constructor for the assembler.
 Assembler::Assembler(int argc, char *argv[]) : m_facc(argc, argv)
 {
@@ -23,9 +24,10 @@ void Assembler::PassI()
 	cout << endl;
 	cout << "Building..." << endl;
 
-	int loc = 0;        // Tracks the location of the instructions to be generated.
+	 // Tracks the location of the instructions to be generated.
+	int loc = 0;       
 	
-						// Successively process each line of source code.
+	// Successively process each line of source code.
 	for (; ; ) {
 
 		// Read the next line from the source file.
@@ -83,7 +85,7 @@ void Assembler::PassII() {
 	cout << "----------------------------------  " << endl;
 	for (int i = 0; i < m_placeMachineInstructionVector.size(); ++i) {
 		cout << "Address " << m_placeMachineInstructionVector[i].loc
-			 <<": "        << m_placeMachineInstructionVector[i].MachineStringValue << "" << endl;
+		     << ": "       << m_placeMachineInstructionVector[i].MachineStringValue << "" << endl;
 	}
 	system("pause");
 }
