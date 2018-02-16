@@ -4,7 +4,6 @@
 //
 #ifndef ASSEMBLER_H
 #define ASSEMBLER_H
-//#pragma once 
 
 #include "SymTab.h"
 #include "Instruction.h"
@@ -15,28 +14,28 @@
 class Assembler {
 
 public:
-    Assembler( int argc, char *argv[] );
-    ~Assembler( );
+        Assembler( int argc, char *argv[] );
+       ~Assembler( );
 
-    // Pass I - establish the locations of the symbols
-    void PassI( );
+       // Pass I - establish the locations of the symbols
+       void PassI( );
 
-    // Pass II - generate a translation
-	void PassII( ); //TO DO
+       // Pass II - generate a translation
+       void PassII( ); //TO DO
 
-	//Feeds and appends a series of machine instructions
-	void Feed(int opCode, int loc, int symbolLoc);
+        //Feeds and appends a series of machine instructions
+       void Feed(int opCode, int loc, int symbolLoc);
 
-    // Display the symbols in the symbol table.
-    void DisplaySymbolTable() { 
-		cout << "Symbol Table Generated: " << endl;
+       // Display the symbols in the symbol table.
+       void DisplaySymbolTable() { 
+       		cout << "Symbol Table Generated: " << endl;
 		cout << "----------------------  " << endl;
 		m_symtab.DisplaySymbolTable(); 
 		cout << endl;
 	}
     
-    // Run emulator on the translation.
-	void RunEmulator(){} //TO DO tool to run the emulator
+        // Run emulator on the translation.
+	void RunEmulator(){} //Tool to run the emulator
 	
 	struct MachineInstruct {
 		int opCode;
@@ -46,16 +45,16 @@ public:
 	};
 
 private:
-		FileAccess m_facc;	    // File Access object
-		SymbolTable m_symtab;	// Symbol table object
-		Instruction m_inst;	    // Instruction object
-		emulator m_emul;        // Emulator 
+	FileAccess m_facc;	// File Access object
+	SymbolTable m_symtab;	// Symbol table object
+	Instruction m_inst;	// Instruction object
+	emulator m_emul;        // Emulator 
 
-		vector<MachineInstruct> m_placeMachineInstructionVector;
-		MachineInstruct placeMachineInstructionStruct;
-		stringstream machineStringStream;
-		string machineString = "";
-		int m_locTurn;
+	vector<MachineInstruct> m_placeMachineInstructionVector;
+	MachineInstruct placeMachineInstructionStruct;
+	stringstream machineStringStream;
+	string machineString = "";
+	int m_locTurn;
 };
 #endif
 
