@@ -10,19 +10,17 @@
 
 class Errors {
 
-public:
-    
-    // Initializes error reports.
-    static void InitErrorReporting( );
+public:  
+       // Initializes error reports.
+       static void InitErrorReporting( );
 
-    // Records an error message.
-    static void RecordError( string &a_emsg );
+       // Records an error message.
+       static void RecordError( string &a_emsg );
 
-    // Displays the collected error message.
-    static void DisplayErrors( );
+       // Displays the collected error message.
+       static void DisplayErrors( );
 
 private:
-
-    static vector<string> m_ErrorMsgs;
+        static vector<string> m_ErrorMsgs;
 };
 #endif 
