@@ -1,8 +1,8 @@
 //
 //		File access to source file.
 //
-#ifndef _FILEACCESS_H   // This is the way that multiple inclusions are defended against in UNIX
-#define _FILEACCESS_H // We use pramas in Visual Studio.
+#ifndef _FILEACCESS_H   
+#define _FILEACCESS_H 
 
 #include <fstream>
 #include <stdlib.h>
@@ -25,8 +25,8 @@ public:
     void rewind( );
 
 private:
-    ifstream m_sfile;		// Source file object.
-	  string m_buff;
+        ifstream m_sfile;		// Source file object.
+	string m_buff;
 };
 #endif
 
