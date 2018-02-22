@@ -16,9 +16,9 @@ Location    Contents    Original Statement
 105          130000             halt
 				              ; test
 106          000005     x       declare  5
-107                     y       declare  88
-206          000555     b       declare  444
-207          000100     a       declare  200
+107          000099     y       declare  99
+206          000555     b       declare  555
+207          000100     a       declare  100
 				end
 ________________________________________________________
 Press Enter to continue...
