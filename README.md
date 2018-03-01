@@ -17,8 +17,8 @@ The following is a sample program:
                          ; accumulator during run time.
           write    x
           bp       hi
-    ^     ?        x     ; Prints the first value of x. Not yet implemented.  
-    $     ?        x     ; Prints the last value of x. Not yet implemented.  
+    ^     ?        x     ; Prints the first value of x.  
+    $     ?        x     ; Prints the last value of x. 
           ?        x     ; Prints the value of x
           halt
    
