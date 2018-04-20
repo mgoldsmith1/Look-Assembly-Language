@@ -1,7 +1,7 @@
 # Look-Assembly
 A Regex-like assembly language that I wrote in C++. This project includes a compiler and an assembler. 
 
-The purpose is to create a low-level language that provides inferential logic to avoid traversals in an undirected graph. More documentation to be added. 
+The purpose is to create a low-level language that provides inferential logic to avoid traversals in an undirected graph. 
 
 _________________________________
 The following is a sample program:
