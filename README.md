@@ -21,7 +21,7 @@ The following is a sample program:
     $     ?        x     ; Prints the last value of x. 
           ?        x     ; Prints the value of x
           
-    sift  A?       x     ; sift through forall the contents found in x
+    sift  A?       x     ; the sift iterator will loop through forall (A?) the contents found in x
     *.=1  sieve    !#    ; the sieve filter will find all that are not numbers (!#) 
                          ; (*.=?) look ahead is an iteration limiter 
                          ; in this case (*.=1) we stop the sift iterator while filtering nums at postion 1
