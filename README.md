@@ -12,9 +12,10 @@ The following is a sample program:
                          
           pack     x     ; Loads the contents of x into a temporary memory allocator
           
-    hey   acc      y     ; Stores the location of 'hey' into the symbol table, during compilation the memory address
-                         ; of y is appended to the location of 'hey' on the symbol table and is then loaded into an
-                         ; accumulator during run time.
+    hey   acc      y     ; Stores the location of 'hey' into the symbol table during compilation the 
+                         ; memory address of y is appended to the location of 'hey' on the symbol 
+                         ; table and is then loaded into an accumulator during run time.
+                         
           write    x
           bp       hi
     ^     ?        x     ; Prints the first value of x.  
@@ -23,7 +24,7 @@ The following is a sample program:
           
     sift  A?       x     ; the sift iterator will loop through forall (A?) the contents found in x
     *.=1  sieve    !#    ; the sieve filter will find all that are not numbers (!#) 
-                         ; (*.=?) look ahead is an iteration limiter 
+                         ; the (*.=?) look ahead is an iteration limiter 
                          ; in this case (*.=1) we stop the sift iterator while filtering nums at postion 1
                          
           pack     y, x  ; pack will load the contents of x into y 
