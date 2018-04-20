@@ -1,5 +1,5 @@
 # Look-Assembly
-A Regex-like assembly language that I wrote in C++. This project includes a compiler and an assembler. More documentation to be added.
+A Regex-like assembly language that I wrote in C++. This project includes a compiler and an assembler. More documentation to be added. The purpose is to create inferential logic to avoid traversals in an undirected graph such as a Symbol Graph for example.
 
 _________________________________
 The following is a sample program:
