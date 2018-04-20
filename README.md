@@ -20,6 +20,12 @@ The following is a sample program:
     ^     ?        x     ; Prints the first value of x.  
     $     ?        x     ; Prints the last value of x. 
           ?        x     ; Prints the value of x
+          
+    sift  A?       x     ; sift through forall the contents found in x
+    *.=1  sieve    !#    ; the sieve filter will find all that are not numbers (!#) 
+                         ; (*.=?) look ahead is an iteration limiter in this case look for the first position
+          pack     y, x  ; pack will load the contents of x into y 
+          ?        y     ; prints all that are not nums from y discovered from x
           halt
    
     x     declare   5    
